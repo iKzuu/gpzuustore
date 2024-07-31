@@ -1,0 +1,179 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: gray;
+}
+
+nav {
+    background: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navItem:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid greenyellow;
+}
+
+.searchInput {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.searchInput:focus{
+    outline: none;
+    background: transparent;
+}
+
+.searchInput::placeholder{
+    color: white;
+}
+
+.searchButton {
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.limitedOffer {
+    font-size: 1.5em;
+    border-bottom: 2px solid greenyellow;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.slider {
+    background: url("https://static.vecteezy.com/system/resources/previews/035/668/410/non_2x/ai-generated-black-abstract-abstract-triangle-black-abstract-backgrounds-free-photo.jpg");
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderImage {
+    z-index: 1;
+}
+
+.sliderBg {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    bottom: 0;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.sliderPrice {
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-weight: 300;
+    font-size: 4rem;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.buyButton {
+    padding: 10px;
+    position: absolute;
+    top: 55%;
+    right: 21%;
+    color: white;
+    font-size: 2em;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.buyButton:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: greenyellow;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+}
+
+.sliderItem:nth-child(1) .sliderPrice {
+    background-image: linear-gradient(to right, rgb(104, 109, 118, 0.3), rgb(0, 0, 0, 0.3));
+    color: lightgray;
+    backdrop-filter: blur(5px);
+}
+
+.sliderItem:nth-child(2) .sliderPrice {
+    background-image: linear-gradient(to right, rgb(110, 172, 218), rgb(227, 165, 199, 0.3));
+    color: lightgray;
+    backdrop-filter: blur(5px);
+}
+
+.sliderItem:nth-child(3) .sliderPrice {
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.3),rgb(255, 130, 37, 0.3));
+    color: lightgray;
+    backdrop-filter: blur(5px);
+}
+
+.sliderItem:nth-child(4) .sliderPrice {
+    background-image: linear-gradient(to right,rgb(0, 0, 0, 0.3), rgb(0, 141, 218, 0.3),rgb(249, 240, 122, 0.3));
+    color: lightgray;
+    backdrop-filter: blur(5px);
+}

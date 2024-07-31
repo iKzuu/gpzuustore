@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>GPU STORE</title>
+  </head>
+
+  <body>
+
+    <!-- navvbar -->
+    <nav>
+        <div class="navTop">
+            <!-- nav item 1 -->
+            <div class="navItem">
+                <h1 class="logo">
+                    gpzuustore
+                </h1>
+                <img src="image/icon/graphic-card.png" alt="" width="55" height="55">
+            </div>
+
+            <!-- nav item 2 -->
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" required class="searchInput" id="search" placeholder="Search">
+                    <button class="searchButton">
+                        <img class="searchIcon" src="/image/search.png" alt="search icon" width="25" height="25">
+                    </button>
+                </div>
+            </div>
+
+            <!-- nav item 3 -->
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer</span>
+            </div>
+        </div>
+
+        <div class="navBottom">
+            <h3 class="menuItem">Asus</h3>
+            <h3 class="menuItem">Colorful</h3>
+            <h3 class="menuItem">Gigabyte</h3>
+            <h3 class="menuItem">MSI</h3>
+        </div>
+    </nav>
+
+    <!-- produk slider -->
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="/image/asus-tuf-012g-v2-gaming-rtx3060.png" alt="asus tuf" class="sliderImage" width="700" height="700">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Asus TUF Gaming<br>O12G V2<br>RTX 3060 </h1>
+                <h2 class="sliderPrice">$450</h2>
+                <button class="buyButton">BUY NOW</button>
+            </div>
+
+            <div class="sliderItem">
+                <img src="/image/colorful-ultraw-oc-rtx3060-12gb.png" alt="" class="sliderImage" width="700" height="700">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Colorful Ultra W<br>OC 12G<br>RTX 3060</h1>
+                <h2 class="sliderPrice">$300</h2>
+                <button class="buyButton">BUY NOW</button>
+            </div>
+
+            <div class="sliderItem">
+                <img src="/image/gigabyte-eagle-oc-rtx3060.png" alt="" class="sliderImage" width="700" height="700">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Gigabyte Eagle<br>OC RTX 3060</h1>
+                <h2 class="sliderPrice">$250</h2>
+                <button class="buyButton">BUY NOW</button>
+            </div>
+            
+            <div class="sliderItem">
+                <img src="/image/msi-gaming-x-rtx3060.png" alt="" class="sliderImage" width="700" height="700">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MSI GAMING-X<br>RTX 3060</h1>
+                <h2 class="sliderPrice">$200</h2>
+                <button class="buyButton">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- connect to javascript file -->
+    <script src="app.js"></script>
+  </body>
+
+</html>
