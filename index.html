@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/icon/graphic-card.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>GPU STORE</title>
+    <title>gpzuustore</title>
   </head>
 
   <body>
@@ -35,7 +36,7 @@
 
             <!-- nav item 3 -->
             <div class="navItem">
-                <span class="limitedOffer">Limited Offer</span>
+                <img src="image/features/add-to-cart.png" alt="" class="shoppingCart">
             </div>
         </div>
 
@@ -51,38 +52,115 @@
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
-                <img src="/image/asus-tuf-012g-v2-gaming-rtx3060.png" alt="asus tuf" class="sliderImage" width="700" height="700">
+                <img src="image/asus/asus4.png" alt="asus tuf" class="sliderImage">
                 <div class="sliderBg"></div>
-                <h1 class="sliderTitle">Asus TUF Gaming<br>O12G V2<br>RTX 3060 </h1>
+                <h1 class="sliderTitle">Asus TUF Gaming<br>O12G V2<br>RTX 3060</h1>
                 <h2 class="sliderPrice">$450</h2>
-                <button class="buyButton">BUY NOW</button>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW</button>
+                </a>
             </div>
 
             <div class="sliderItem">
-                <img src="/image/colorful-ultraw-oc-rtx3060-12gb.png" alt="" class="sliderImage" width="700" height="700">
+                <img src="image/colorful/colorful2.png" alt="" class="sliderImage">
                 <div class="sliderBg"></div>
-                <h1 class="sliderTitle">Colorful Ultra W<br>OC 12G<br>RTX 3060</h1>
+                <h1 class="sliderTitle">Colorful Ultra W OC<br>12G RTX 3060</h1>
                 <h2 class="sliderPrice">$300</h2>
-                <button class="buyButton">BUY NOW</button>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW</button>
+                </a>
             </div>
 
             <div class="sliderItem">
-                <img src="/image/gigabyte-eagle-oc-rtx3060.png" alt="" class="sliderImage" width="700" height="700">
+                <img src="image/gigabyte/gigabyte1.png" alt="" class="sliderImage">
                 <div class="sliderBg"></div>
-                <h1 class="sliderTitle">Gigabyte Eagle<br>OC RTX 3060</h1>
+                <h1 class="sliderTitle">Gigabyte Eagle OC<br>RTX 3060</h1>
                 <h2 class="sliderPrice">$250</h2>
-                <button class="buyButton">BUY NOW</button>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW</button>
+                </a>
             </div>
             
             <div class="sliderItem">
-                <img src="/image/msi-gaming-x-rtx3060.png" alt="" class="sliderImage" width="700" height="700">
+                <img src="image/msi/msi2.png" alt="" class="sliderImage">
                 <div class="sliderBg"></div>
-                <h1 class="sliderTitle">MSI GAMING-X<br>RTX 3060</h1>
+                <h1 class="sliderTitle">MSI GAMING-X 12G<br>RTX 3060</h1>
                 <h2 class="sliderPrice">$200</h2>
-                <button class="buyButton">BUY NOW</button>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW</button>
+                </a>
             </div>
         </div>
     </div>
+
+    <!-- feature -->
+    <div class="features">
+        <div class="feature">
+            <img src="image/features/free-delivery.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free shipping in all provinces in Indonesia</span>
+        </div>
+        <div class="feature">
+            <img src="image/features/return.png" alt="" class="featureIcon">
+            <span class="featureTitle">EASY RETURNS</span>
+            <span class="featureDesc">Easy returns within 7 days</span>
+        </div>
+        <div class="feature">
+            <img src="image/features/chat.png" alt="" class="featureIcon">
+            <span class="featureTitle">CONTACT US</span>
+            <span class="featureDesc">Contact us for support</span>
+        </div>
+    </div>
+
+    <!-- product -->
+     <div class="product" id="product">
+        <img class="productImg" src="image/asus/asus4.png" alt="asus vga">
+        <div class="productDetails">
+            <h1 class="productTitle">Asus TUF Gaming O12G V2 RTX 3060</h1>
+            <h2 class="productPrice">$450</h2>
+            <p class="productDesc">The tougher design of the ASUS TUF Gaming GeForce RTX™ 3060 OC Edition 12GB GDDR6 with the best thermal management performance.</p>
+
+            <div class="displays">
+                <div class="display">
+                    <img src="image/asus/asus4.png" alt="dp1">
+                </div>
+                <div class="display">
+                    <img src="image/asus/asus1.png" alt="dp2">
+                </div>
+                <div class="display">
+                    <img src="image/asus/asus3.png" alt="dp3">
+                </div>
+                <div class="display">
+                    <img src="image/asus/asus12.png" alt="dp4">
+                </div>
+            </div>
+
+            <button class="productButton">BUY NOW</button>
+        </div>
+
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+0 1234 5678 910" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="State, City, St." class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="image/paymenticon/visa.png" alt="visa" class="cardIcon">
+                <img src="image/paymenticon/master.png" alt="mastercard" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <img src="image/icon/cross.png" alt="X" class="close">
+        </div>
+     </div>
 
     <!-- connect to javascript file -->
     <script src="app.js"></script>

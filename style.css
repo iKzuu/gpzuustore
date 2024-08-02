@@ -1,8 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Ubuntu", sans-serif;
     padding: 0;
     margin: 0;
-    background: gray;
 }
 
 nav {
@@ -35,6 +38,7 @@ nav {
     padding: 10px 20px;
     border-radius: 20px;
     border: 1px solid greenyellow;
+    margin-right: 190px;
 }
 
 .searchInput {
@@ -58,12 +62,22 @@ nav {
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.limitedOffer {
+.searchButton:hover {
+    transform: scale(1.1);
+}
+
+.shoppingCart {
+    width: 45px;
     font-size: 1.5em;
-    border-bottom: 2px solid greenyellow;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.shoppingCart:hover {
+    transform: scale(1.1);
 }
 
 .navBottom {
@@ -82,7 +96,8 @@ nav {
 
 .slider {
     background: url("https://static.vecteezy.com/system/resources/previews/035/668/410/non_2x/ai-generated-black-abstract-abstract-triangle-black-abstract-backgrounds-free-photo.jpg");
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); */
+    overflow: hidden;
 }
 
 .sliderWrapper {
@@ -97,10 +112,13 @@ nav {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .sliderImage {
     z-index: 1;
+    width: 600px;
 }
 
 .sliderBg {
@@ -177,3 +195,185 @@ nav {
     color: lightgray;
     backdrop-filter: blur(5px);
 }
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.featureIcon{
+    width: 100px;
+    height: 100px;
+}
+
+.featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc {
+    color: gray;
+    font-size: 20px;
+    height: 100px;
+}
+
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.payment {
+    width: 500px;
+    height: 550px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87); 
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87);
+}
+
+.payTitle {
+    font-size: 1.5em;
+    color: rgb(137, 137, 137);
+}
+
+label {
+    font-size: large;
+    font-weight: 300;
+}
+
+.payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder {
+    color: rgb(157, 157, 157);
+}
+
+.cardIcons {
+    display: flex;
+}
+
+.cardIcon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm {
+    width: 25%;
+}
+
+.payButton {
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87); 
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.close:hover {
+    transform: scale(1.1);
+}
+
+.productImg {
+    width: 50%;
+}
+
+.productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 80px;
+}
+
+.productTitle {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.productDesc {
+    font-size: large;
+    color: gray;
+}
+
+.displays {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.display {
+    border: 5px solid #76b900;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.display:hover {
+    transform: scale(1.1);
+}
+
+.display img{
+    width: 100px;
+}
+
+.productButton {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px solid #76b900;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.productButton:hover {
+    background-color: white;
+    border: 5px solid black;
+    color: #76b900;
+}
+
