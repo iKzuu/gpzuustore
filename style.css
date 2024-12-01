@@ -27,8 +27,16 @@ nav {
 
 .navTop {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.navItemGroup {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .search {
@@ -38,7 +46,6 @@ nav {
     padding: 10px 20px;
     border-radius: 20px;
     border: 1px solid greenyellow;
-    margin-right: 190px;
 }
 
 .searchInput {
@@ -118,7 +125,7 @@ nav {
 
 .sliderImage {
     z-index: 1;
-    width: 600px;
+    width: 450px;
 }
 
 .sliderBg {
@@ -134,9 +141,9 @@ nav {
 .sliderTitle {
     position: absolute;
     top: 10%;
-    right: 10%;
+    right:10%;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     z-index: 1;
 }
 
@@ -224,7 +231,6 @@ nav {
 .featureDesc {
     color: gray;
     font-size: 20px;
-    height: 100px;
 }
 
 .product {
@@ -317,8 +323,13 @@ label {
     transform: scale(1.1);
 }
 
-.productImg {
+.productImgDiv {
+    margin-left: 20px;
     width: 50%;
+}
+
+.productImg {
+    width: 100%;
 }
 
 .productDetails {
@@ -377,3 +388,82 @@ label {
     color: #76b900;
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    background: rgb(30, 29, 29);
+}
+
+.leftFooter {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.footerMenuTitle {
+    color: #76b900;
+    font-size: 20px;
+}
+
+.footerMenuList{
+    padding: 0;
+    list-style: none;
+}
+
+.footerListItem{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.footerListItem:hover{
+    color: #76b900;
+    cursor: pointer;
+}
+
+.rightFooter {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footerInput{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.footerButton{
+    padding: 10px;
+    color: white;
+    background-color: #76b900;
+    border: none;
+    border-radius: 5px;
+}
+
+.footerButton:hover{
+    transition: all;
+    background-color: gray;
+}
+
+.footerSocIcon{
+    display: flex;
+}
+
+.footerSocMed{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.copyright{
+    color: white;
+    font-size: 15px;
+}
+
+/* PANJANG PANJANG ORANG PANJANG */

@@ -1,0 +1,182 @@
+@media screen and (max-width:480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .navTop {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .navItemGroup {
+        display: flex;
+        align-items: center;
+    }
+
+    .search {
+        padding: 10px;
+    }
+
+    .searchInput {
+        font-size: medium;
+    }
+
+    .navBottom {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .menuItem {
+        margin: 15px;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    .slider {
+        background-size: cover;
+    }
+
+    .sliderImage {
+        width: 250px;
+    }
+
+    .sliderBg {
+        width: 300px;
+        height: 50px;
+    }
+
+    .sliderTitle {
+        display: none;
+    }
+
+    .sliderPrice {
+        font-size: large;
+    }
+
+    .buyButton {
+        font-size: small;
+        position: absolute;
+        top: 90%;
+    }
+
+    .features {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .feature {
+        margin: 0 10px 0 10px;
+    }
+
+    .featureIcon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .featureTitle {
+        font-size: medium;
+        margin: 5px;
+    }
+
+    .featureDesc {
+        display: none;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: unset;
+        padding: 0;
+    }
+
+    .productImgDiv {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .productImg {
+        width: 80%;
+    }
+
+    .productDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: unset;
+        padding: 20px;
+        width: unset;
+    }
+
+    .productTitle {
+        font-size: larger;
+    }
+
+    .productPrice {
+        font-size: large;
+    }
+
+    .productDesc {
+        font-size: medium;
+    }
+
+    .display img{
+        width: 50px;
+        height: auto;
+    }
+
+    .productButton {
+        width: 35%;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftFooter {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footerMenuTitle {
+        font-size: large;
+    }
+
+    .footerMail {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerMenuList {
+        font-size: medium;
+    }
+
+    .rightFooter {
+        padding: 20px;
+    }
+
+    .footerSocIcon {
+        gap: 20px;
+    }
+
+    .footerSocMed {
+        width: 35px;
+        height: 35px;
+        margin-right: 0;
+    }
+
+    .payment {
+        width: 90%;
+        padding: 20px;
+        top: unset;
+        bottom: unset;
+    }
+}
